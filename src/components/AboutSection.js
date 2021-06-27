@@ -3,15 +3,13 @@ import home1 from '../img/home1.png'; // DO NOT use curly braces as iamges are N
 
 
 
-// styled import
-import styled from "styled-components";
-
+// get the global styled compontent exports from the styles.js file
+// note: after we use inline styled components we can delete the styled import line from here
+import { AboutStyled, DescriptionStyled, HideStyled, ImageStyled } from '../styles';
 
 
 
 const AboutSection = () => {
-
-
 
     return (
         <AboutStyled>
@@ -29,6 +27,7 @@ const AboutSection = () => {
                     <HideStyled>
                         <h2>true</h2>
                     </HideStyled>
+
                 </div>
 
                 <p>Contact us for any photography or any videography ideas that you have</p>
@@ -41,51 +40,9 @@ const AboutSection = () => {
 
         </AboutStyled>
     )
-}
+};
 
 
-
-
-// styled Components
-const AboutStyled = styled.div`
-  min-height: 90vh;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 5rem 10rem;
-  color: #fff;
-
-        h2{
-            color: white;
-        }
-`;
-
-
-const DescriptionStyled = styled.div`
-    flex: 1;
-    padding-right: 5rem;
-
-        h2{
-            font-weight: lighter;
-        }
-`;
-
-
-const HideStyled = styled.div`
-    overflow: hidden;
-`;
-
-
-const ImageStyled = styled.div`
-        flex: 1;
-        overflow:hidden;
-
-            img{
-                width: 100%;
-                height: 80vh;
-                object-fit: cover;
-            }
-`;
 
 
 
