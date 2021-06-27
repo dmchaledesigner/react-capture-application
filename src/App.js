@@ -1,9 +1,14 @@
 import React from 'react';
 
+// import pages
+import AboutUs from './Pages/AboutUs';
+
+
 function App() {
   return (
     <div className="App">
-      <h1>test</h1>
+      <AboutUs />
+
     </div>
   );
 }
