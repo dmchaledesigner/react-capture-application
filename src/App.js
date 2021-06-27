@@ -1,13 +1,14 @@
 import React from 'react';
 
 // import pages
-import AboutUs from './Pages/AboutUs';
+import AboutUsPage from './Pages/AboutUsPage';
 
 
 function App() {
   return (
     <div className="App">
-      <AboutUs />
+
+      <AboutUsPage />
 
     </div>
   );
