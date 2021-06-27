@@ -1,4 +1,6 @@
 import React from 'react';
+import { styled } from "styled-components";
+
 import clock from '../img/clock.svg';
 import diaphragm from '../img/diaphragm.svg';
 import money from '../img/money.svg';
