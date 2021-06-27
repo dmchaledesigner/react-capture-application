@@ -35,7 +35,7 @@ const AboutSection = () => {
             </DescriptionStyled>
 
             <ImageStyled>
-                <img src={home1} alt="hero image guy" />
+                <img src={home1} alt="hero" />
             </ImageStyled>
 
         </AboutStyled>
