@@ -2,8 +2,6 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
 
-//import Pages
-import OurWorkpage from './Pages/OurWorkPage';
 
 import { BrowserRouter } from 'react-router-dom'
 
