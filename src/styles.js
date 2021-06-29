@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from "styled-components/macro";
 
 
 // universal styled Components - we use export as normal functions to import into other JSX components

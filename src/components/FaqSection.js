@@ -1,6 +1,6 @@
 import React from 'react';
 
-import styled from 'styled-components';
+import styled from "styled-components/macro";
 import { AboutStyled } from '../styles';
 
 const FaqSection = () => {
@@ -80,12 +80,13 @@ const FaqStyled = styled(AboutStyled)`
   display: block;
 
     span{
-        display: block;
+        display: inline-block;
     }
 
     h2{
         font-weight: lighter;
-        padding-bottom: 2rem;
+        padding-bottom: 3rem;
+        font-size: 3rem;
     }
 
     .faq-line{

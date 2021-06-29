@@ -10,7 +10,7 @@ import home2 from '../img/home2.png';
 // styled components imports 
 import { AboutStyled, DescriptionStyled, ImageStyled } from '../styles';
 // we need this line to add to the AboutStyled as a para for modifying this styled import
-import styled from 'styled-components';
+import styled from 'styled-components/macro';
 
 
 
@@ -18,7 +18,7 @@ const ServicesSection = () => {
     return (
         <ServicesStyled>
             <DescriptionStyled>
-                <h2>High <span>quality</span> services</h2>
+                <h2>High <span>QUALITY</span> services</h2>
                 <CardWrapStyled>
                     <Card>
                         <div className="icon">

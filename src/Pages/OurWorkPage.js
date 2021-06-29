@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 // styled components
-import styled from 'styled-components';
+import styled from "styled-components/macro";
 
 
 
@@ -19,7 +19,7 @@ const OurWorkPage = () => {
             <MovieStyled>
                 <h2>The Athlete</h2>
                 <div className="line"></div>
-                <Link>
+                <Link to="/work/the-athlete">
                     <img src={athlete} alt="athlete" />
                 </Link>
             </MovieStyled>
@@ -29,7 +29,7 @@ const OurWorkPage = () => {
             <MovieStyled>
                 <h2>The Racer</h2>
                 <div className="line"></div>
-                <Link>
+                <Link to="/work/the-racer">
                     <img src={theracer} alt="racer" />
                 </Link>
             </MovieStyled>
@@ -39,7 +39,7 @@ const OurWorkPage = () => {
             <MovieStyled>
                 <h2>The Good Times</h2>
                 <div className="line"></div>
-                <Link>
+                <Link to="/work/good-times">
                     <img src={goodtimes} alt="Good Times" />
                 </Link>
             </MovieStyled>
@@ -56,10 +56,23 @@ const WorkStyled = styled.div`
 
 const MovieStyled = styled.div`
     padding-bottom: 10rem;
+
+    h2{
+        font-size: 3rem;
+        color: #fff;
+        font-weight: bold;
+    }
     .line{
-        margin-bottom: 3rem;
+        width: 100%;
+        background: #23d597;
         height: 0.3rem;
-        background: #ccc;
+        margin: 2rem 0rem;
+    }
+
+    img{
+        width: 100%;
+        height: 70vh;
+        object-fit: cover;
     }
 `
 

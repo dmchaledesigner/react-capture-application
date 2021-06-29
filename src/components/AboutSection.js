@@ -1,4 +1,6 @@
 import React from 'react';
+
+//import images
 import home1 from '../img/home1.png'; // DO NOT use curly braces as iamges are NOT a named export like from an exported function - its only a filetype
 
 
