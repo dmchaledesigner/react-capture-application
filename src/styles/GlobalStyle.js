@@ -1,11 +1,6 @@
-import { createGlobalStyle } from 'styled-components/macro';
+import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyle = createGlobalStyle`
-
-/* Google fonts */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
-
     *{
         margin:0;
         padding:0;
@@ -62,7 +57,4 @@ const GlobalStyle = createGlobalStyle`
         font-size: 1.1.rem;
     }
 `;
-
-
-
 export default GlobalStyle;

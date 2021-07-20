@@ -1,7 +1,10 @@
-import styled from "styled-components/macro";
 
 
-// universal styled Components - we use export as normal functions to import into other JSX components
+// remember to import styled components!!!
+import styled from 'styled-components/macro';
+
+
+
 export const AboutStyled = styled.div`
   min-height: 90vh;
   display: flex;

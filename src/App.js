@@ -1,50 +1,40 @@
 
-import { Route, Switch } from "react-router-dom";
-
-
-//global styles
-import GlobalStyle from './components/GlobalStyle';
+import React from 'react';
+import { Route, Switch } from 'react-router-dom';
 
 
 
-//import Navigation
-import Navigation from './components/Navigation'
-
-
-// import pages
-import AboutUsPage from './Pages/AboutUsPage';
-import OurWorkPage from './Pages/OurWorkPage';
-import ContactUspage from './Pages/ContactUsPage';
-import MovieDetail from './Pages/MovieDetail';
+//import Pages 
+import Layout from './components/Layout';
+import AboutUsPage from './pages/AboutUs';
+import OurWorkPage from './pages/OurWork';
+import ContactUsPage from './pages/ContactUs';
+import MovieDetailPage from './pages/MovieDetail'; // this is for the work/:id
 
 
 
 
 
 
+// functions
 
 function App() {
 
 
 
 
+
   return (
-    <div className="App">
-      <GlobalStyle />
-
-
-
-      <Navigation />
+    <Layout>
 
       <Switch>
-        <Route exact path="/" component={AboutUsPage}></Route>
-        <Route exact path="/work" component={OurWorkPage}></Route>
-        <Route path="/work/:id" component={MovieDetail}></Route>
-        <Route path="/contact" component={ContactUspage}></Route>
+        <Route path="/" component={AboutUsPage} exact />
+        <Route path="/work" component={OurWorkPage} exact />
+        <Route path="/work/:id" component={MovieDetailPage} />
+        <Route path="/contact" component={ContactUsPage} />
       </Switch>
 
-
-    </div>
+    </Layout>
   );
 }
 
