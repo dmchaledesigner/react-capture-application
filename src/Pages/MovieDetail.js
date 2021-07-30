@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import styled from 'styled-components/macro';
 import { useHistory } from 'react-router-dom';
 
 import { MovieState } from '../data/MovieState.js'; // remember to use {} as its a returned xport function
@@ -9,7 +8,7 @@ const MovieDetail = () => {
 
     //movie state
     const [movies, setMovies] = useState(MovieState); // console.log(movies);
-    const [movie, setMovie] = useState(null);
+    const [movie, setMovie] = useState([]);
 
 
     // test use history
@@ -17,20 +16,17 @@ const MovieDetail = () => {
     const url = history.location.pathname; // gets the url path
 
 
-
-    const getCurrentMovie = (url) => {
-        const currentMovie = movies.filter(movie => movie.url === url)
-        setMovie(currentMovie[0])
-
+    const currentMovie = (url) => {
+        const getUrl = movies.filter(item => item.url === url);
+        setMovie(getUrl[0]);
+        console.log(movie);
     }
 
 
+
     useEffect(() => {
-        getCurrentMovie(url)
-    }, [movies, url]) // evoke function once the movies or url changes
-
-
-
+        currentMovie(url)
+    }, [url])
 
 
 
@@ -39,6 +35,9 @@ const MovieDetail = () => {
     return (
         <div>
             <h1>Movie Detail</h1>
+
+            {movie && <div>{movie.title}</div>}
+
         </div>
     )
 }

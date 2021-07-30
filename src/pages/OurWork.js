@@ -15,7 +15,7 @@ const OurWork = () => {
             <Movie>
                 <h2>The Athlete</h2>
                 <div className="line"></div>
-                <Link to='#'>
+                <Link to='/work/the-athelete'>
                     <HideStyled>
                         <img src={athelete} alt="athelete" />
                     </HideStyled>
@@ -25,7 +25,7 @@ const OurWork = () => {
             <Movie>
                 <h2>The Racer</h2>
                 <div className="line"></div>
-                <Link to='#'>
+                <Link to='/work/the-racer'>
                     <HideStyled>
                         <img src={theracer} alt="the racer" />
                     </HideStyled>
@@ -35,7 +35,7 @@ const OurWork = () => {
             <Movie>
                 <h2>Good Times</h2>
                 <div className="line"></div>
-                <Link to='#'>
+                <Link to='/work/good-times'>
                     <HideStyled>
                         <img src={goodtimes} alt="goodtimes" />
                     </HideStyled>

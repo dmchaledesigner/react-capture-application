@@ -18,7 +18,7 @@ export const MovieState = () => {
       title: 'The Athlete',
       mainImg: athlete,
       secondaryImg: athlete2,
-      url: '/work/the-athlete',
+      url: '/work/the-athelete',
       awards: [
         {
           title: 'Truly A masterpiece',
