@@ -11,53 +11,53 @@ import homeImg2 from '../img/home2.png';
 
 
 const ServicesSection = () => {
-    return (
+  return (
 
-        <Services>
-            <DescriptionStyled>
-                <h2>
-                    High <span>quality</span> services.
-                </h2>
-                <Cards>
-                    <Card>
-                        <div className="icon">
-                            <img src={clock} alt="" />
-                            <h3>Efficient</h3>
-                        </div>
-                        <p>Lorem ipsum dolor sit amet.</p>
-                    </Card>
-                    <Card>
-                        <div className="icon">
-                            <img src={teamwork} alt="" />
-                            <h3>Teamwork</h3>
-                        </div>
-                        <p>Lorem ipsum dolor sit amet.</p>
-                    </Card>
-                    <Card>
-                        <div className="icon">
-                            <img src={diaphragm} alt="" />
-                            <h3>Pro Grade Gear</h3>
-                        </div>
-                        <p>Lorem ipsum dolor sit amet.</p>
-                    </Card>
-                    <Card>
-                        <div className="icon">
-                            <img src={money} alt="" />
-                            <h3>Affordable</h3>
-                        </div>
-                        <p>Lorem ipsum dolor sit amet.</p>
-                    </Card>
-                </Cards>
-            </DescriptionStyled>
-            <ImageStyled>
-                <img src={homeImg2} alt="camera" />
-            </ImageStyled>
-        </Services>
-
-
+    <Services>
+      <DescriptionStyled>
+        <h2>
+          High <span>quality</span> services.
+        </h2>
+        <Cards>
+          <Card>
+            <div className="icon">
+              <img src={clock} alt="" />
+              <h3>Efficient</h3>
+            </div>
+            <p>Lorem ipsum dolor sit amet.</p>
+          </Card>
+          <Card>
+            <div className="icon">
+              <img src={teamwork} alt="" />
+              <h3>Teamwork</h3>
+            </div>
+            <p>Lorem ipsum dolor sit amet.</p>
+          </Card>
+          <Card>
+            <div className="icon">
+              <img src={diaphragm} alt="" />
+              <h3>Pro Grade Gear</h3>
+            </div>
+            <p>Lorem ipsum dolor sit amet.</p>
+          </Card>
+          <Card>
+            <div className="icon">
+              <img src={money} alt="" />
+              <h3>Affordable</h3>
+            </div>
+            <p>Lorem ipsum dolor sit amet.</p>
+          </Card>
+        </Cards>
+      </DescriptionStyled>
+      <ImageStyled>
+        <img src={homeImg2} alt="camera" />
+      </ImageStyled>
+    </Services>
 
 
-    )
+
+
+  )
 }
 
 
@@ -90,7 +90,7 @@ const Cards = styled.div`
   }
 `;
 const Card = styled.div`
-  flex-basis: 20rem;
+  flex-basis: 17rem;
   .icon {
     display: flex;
     align-items: center;

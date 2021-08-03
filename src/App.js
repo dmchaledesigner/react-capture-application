@@ -3,15 +3,15 @@ import React from 'react';
 import { Route, Switch } from 'react-router-dom';
 
 
+// styles
+import GlobalStyle from './styles/GlobalStyle';
 
 //import Pages 
-import Layout from './components/Layout';
+import Nav from "./components/Nav";
 import AboutUsPage from './pages/AboutUs';
 import OurWorkPage from './pages/OurWork';
 import ContactUsPage from './pages/ContactUs';
 import MovieDetailPage from './pages/MovieDetail'; // this is for the work/:id
-
-
 
 
 
@@ -22,10 +22,10 @@ function App() {
 
 
 
-
-
   return (
-    <Layout>
+    <>
+      <GlobalStyle />
+      <Nav />
 
       <Switch>
         <Route path="/" component={AboutUsPage} exact />
@@ -34,7 +34,7 @@ function App() {
         <Route path="/contact" component={ContactUsPage} />
       </Switch>
 
-    </Layout>
+    </>
   );
 }
 
